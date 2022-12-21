@@ -7,6 +7,12 @@ const NotFoundError = require('../../../errors/NotFoundError');
 const ConflictError = require('../../../errors/ConflictError');
 
 class TicketService {
+  async getTickets() {
+    const tickets = await db.Ticket.findAll({ raw: true });
+
+    return tickets;
+  }
+
   async buyTicket(eventId) {
     const event = await EventService.getEvent(eventId);
 

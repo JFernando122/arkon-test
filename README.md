@@ -64,3 +64,5 @@ CREATE TABLE `SequelizeMeta` (
 
 ## Extra
 Como extra esta un archivo JSON con una pequeña colección de POSTMAN para las llamadas a la API. Solo contiene una llamada por endpoint, pero igual puede probarse llamando a los que estan mas de una vez. Por ejemplo llamando a la de canjear un ticket 2 vecez o tratando de llamar al de eliminar el evento después de comprar el ticket o después de cambiar la fecha final a una pasada.
+
+Aparte de los endpoints requeridos, tambien estan /api/v1/event y /api/v1/ticket para ver todos los eventos y tickets respectivamente
