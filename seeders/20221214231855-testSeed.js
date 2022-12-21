@@ -43,8 +43,8 @@ module.exports = {
     {
       id: 5,
       name: 'Birthday party',
-      start_date: '14/12/2022',
-      start_date: '18/03/2023',
+      start_date: '14/12/2020',
+      end_date: '18/03/2022',
       quantity: 120,
     },
     // Can delete since the event is past end_date (sold tickets)
