@@ -93,6 +93,9 @@ class EventService {
 
     await db.Event.destroy({ where: { id } });
 
+    // Delete the tickets related to the event
+    await db.Ticket.destroy({ where: { event_id: id } });
+
     return;
   }
 
