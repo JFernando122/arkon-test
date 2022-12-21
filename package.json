@@ -3,16 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "pretest": "cross-env NODE_ENV=test npx sequelize-cli db:seed:all",
-    "test": "cross-env NODE_ENV=test mocha test/**/*.js -R list",
     "start": "cross-env NODE_ENV=production node index.js",
     "dev": "cross-env NODE_ENV=development nodemon index.js",
-    "db:migrate:dev": "cross-env NODE_ENV=development npx sequelize-cli db:migrate",
-    "db:migrate:prod": "cross-env NODE_ENV=production npx sequelize-cli db:migrate",
-    "db:migrate:test": "cross-env NODE_ENV=test npx sequelize-cli db:migrate",
-    "db:seed:dev": "cross-env NODE_ENV=development npx sequelize-cli db:seed:all",
-    "db:seed:prod": "cross-env NODE_ENV=production npx sequelize-cli db:seed:all",
-    "db:seed:test": "cross-env NODE_ENV=test npx sequelize-cli db:seed:all"
+    "db:migrate": "cross-env NODE_ENV=development npx sequelize-cli db:migrate",
+    "db:seed": "cross-env NODE_ENV=development npx sequelize-cli db:seed:all",
+    "pretest": "cross-env NODE_ENV=test npx sequelize-cli db:seed:all",
+    "test": "cross-env NODE_ENV=test mocha test/**/*.js -R list"
   },
   "keywords": [],
   "author": "",
