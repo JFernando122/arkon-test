@@ -25,8 +25,6 @@ Las pruebas se encuentran en la carpeta test que está en la raíz del proyecto
 
 ## Estructura de la base de datos
 
-#### SequelizeMeta
-
 #### Events
 La tabla con la información de los eventos, como se pidió, contiene el nombre, la fecha de inicio y fin y la cantidad de boletos disponibles del evento.
 
